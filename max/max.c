@@ -12,11 +12,13 @@
 
 #include <unistd.h>
 
-int		max(int* tab, unsigned int len)
+int		max(int *tab, unsigned int len)
 {
     int i;
     int max;
 
+    if (tab == 0 || len ==0)
+            return (0);
     i = 0;
     while (i < len)
     {
